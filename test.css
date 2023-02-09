@@ -1,0 +1,83 @@
+input:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+*[unselectable=on] {
+    -moz-user-select: none;
+    -o-user-select:none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+     user-select: none;
+}
+.btn:active {
+    opacity: .6;
+    transition: background 0.3s;
+  }
+.buttons {
+    /* display: block; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    width: 240px;
+    background: black;
+    padding: 10px 0 0 10px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+  
+  .buttons::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  .buttons .btn {
+    /* display: inline-block;
+    float: left; */
+    
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50px;
+    background: #333;
+    color: #fff;
+    margin: 0 10px 10px 0;
+    font-weight: bold;
+  }
+  .calc-numbers {
+    font-family: 'Space Mono', serif;
+    background: black;
+    color: white;
+    font-size: 2em;
+    border: 0;
+    padding: 10px;
+    text-align: right;
+    width: 230px;
+    margin: 0 auto;
+    display: block;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+  
+  .buttons .btn:nth-child(4n),
+  .buttons .btn:last-child {
+    background: #fb9503;
+  }
+  
+  .buttons .btn:nth-child(-N+3) {
+    background: #a5a5a5;
+    color: #000;
+  }
+  
+  .buttons .btn:nth-last-child(3) {
+    grid-column: 1 / 3;
+
+    min-width: 110px;
+    padding-right: 60px;
+    box-sizing: border-box;
+  }
+
+
+
