@@ -91,7 +91,7 @@ function pressOp (currOp) {
         total = command.execute();
         display.innerHTML = total;
     }
-}
+} 
 
 
 
