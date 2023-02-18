@@ -13,8 +13,8 @@ const command = {
     b: undefined,
     is_executed: false,
     operation:  function (aa, bb){
-      if (currOp === '') return;  
-      return aa+bb;
+       
+      return aa;
     },
     execute: function() {
         this.is_executed = true;
