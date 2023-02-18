@@ -12,7 +12,11 @@ const command = {
     a: undefined,
     b: undefined,
     is_executed: false,
-    operation: function (aa, bb){
+    operation:
+    
+    function (aa, bb){
+      if (currOp === '') return
+      else 
         return aa+bb;
     },
     execute: function() {
@@ -49,19 +53,22 @@ function clearDisplay(){
 }
 
 function equals() {
+    if (currOp === undefined) return
     total = command.execute();
     display.innerHTML = total;
     displayCleared = true;
+
   }
 function pressNum(num) {
-    if (displayCleared) {
+  if (displayCleared && command.is_executed) {  // дописал else if вместо if
+    command.is_executed = false;
+    command.a = 0;
+    command.b = 0;
+}  
+  if (displayCleared) {
         command.add_a_num(num);
         display.innerHTML = command.a;
-    } else if (displayCleared && command.is_executed) {  // дописал else if вместо if
-        command.is_executed = false;
-        command.a = 0;
-        command.b = 0;
-    }
+    } 
      else {
         command.add_b_num(num);
         display.innerHTML = command.b;
