@@ -12,11 +12,9 @@ const command = {
     a: undefined,
     b: undefined,
     is_executed: false,
-    operation:
-    
-    function (aa, bb){
-      if (currOp === '') return
-      else return aa+bb;
+    operation:  function (aa, bb){
+      if (currOp === '') return;  
+      return aa+bb;
     },
     execute: function() {
         this.is_executed = true;
@@ -53,11 +51,9 @@ function clearDisplay(){
 }
 
 function equals() {
-    // if (currOp === undefined) return
     total = command.execute();
     display.innerHTML = total;
     displayCleared = true;
-
   }
 function pressNum(num) {
   if (displayCleared && command.is_executed) {  // дописал else if вместо if
