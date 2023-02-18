@@ -42,7 +42,7 @@ const command = {
 function clearDisplay(){
     command.a = undefined;
     command.b = undefined;
-    command.operation = (aa, bb,) => aa + bb;
+    command.operation = (aa, bb,) => aa;
     command.is_executed = false;
     display.innerHTML = "0";
     displayCleared = true;
