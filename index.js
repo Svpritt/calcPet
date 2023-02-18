@@ -16,8 +16,7 @@ const command = {
     
     function (aa, bb){
       if (currOp === '') return
-      else 
-        return aa+bb;
+      else return aa+bb;
     },
     execute: function() {
         this.is_executed = true;
@@ -50,10 +49,11 @@ function clearDisplay(){
     display.innerHTML = "0";
     displayCleared = true;
     total = "";
+    currOp = "";
 }
 
 function equals() {
-    if (currOp === undefined) return
+    // if (currOp === undefined) return
     total = command.execute();
     display.innerHTML = total;
     displayCleared = true;
