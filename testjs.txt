@@ -1,13 +1,13 @@
-// parseFloat - принимает строку а возращает десятичное с плавающей запятой то че надо) поидее 0.2+0.1 даст 0.3)
+// parseFloat - accepts a string and returns a decimal floating point, which is necessary) maybe 0.2 + 0.1 will give 0.3)
 
 let display = document.getElementsByClassName('calc-numbers')[0];
-let displayCleared = false; // был ли нажат оперант СЕ очищения
-let currentOpp = ""; // последний нажатый оперант
-let num1 = 0; // первая цифра
-let num2 = 0; // вторая цифра
-let total = ""; // значение тотал после выполнения операции в виде строки.
-let lustNum = ""; // результат последней операции когда нум1 и нум2 пустые и нажато равно.
-let lustOver = false; // говорит мне о том тчо ластНум пустой.
+let displayCleared = false; // whether the clear CE operant was pressed
+let currentOpp = ""; // last pressed operant
+let num1 = 0; // first digit
+let num2 = 0; // second digit
+let total = ""; // the value of the total after the operation is performed as a string.
+let lustNum = ""; // result of the last operation when num1 and num2 are empty and equal is pressed.
+let lustOver = false; // tells me that lastNum is empty.
 
 let operators = {
     '+': function(a, b) { return parseFloat(a) + parseFloat(b) }, // add
