@@ -8,7 +8,7 @@ Note: This calculator is provided as a basic sample and can be customized or int
 Usage Instructions
 
 Enter the first number.
-Select a mathematical operation (+, -, *, /) or percentage (%).
+Select a mathematical operation (+, -, *, /)
 If necessary, input the second number (if absent, the operation will be performed using the first number).
 Press "=" to get the result.
 The calculator supports sequential execution of multiple operations. If you need to continue calculations after obtaining a result, simply enter the next number and choose a new operation.
