@@ -3,10 +3,10 @@ let currOp = ""; // current operator pressed
 let total = ""; // result and display output
 let display = document.getElementsByClassName('calc-numbers')[0]; // the calculator display element
     const ops = {
-        '+': function(aa, bb) { return aa + bb }, // сложение
-        '-': function(aa, bb) { return aa - bb }, // вычитание 
-        '*': function(aa, bb) { return aa * bb }, // multiply
-        '/': function(aa, bb) { return aa / bb }, // division
+        '+': function(aa, bb) { return aa + bb }, 
+        '-': function(aa, bb) { return aa - bb }, 
+        '*': function(aa, bb) { return aa * bb }, 
+        '/': function(aa, bb) { return aa / bb }, 
         };
 const command = {
     a: undefined,
@@ -56,7 +56,7 @@ function equals() {
     displayCleared = true;
   }
 function pressNum(num) {
-  if (displayCleared && command.is_executed) {  // дописал else if вместо if
+  if (displayCleared && command.is_executed) {  // added else if instead of if
     command.is_executed = false;
     command.a = 0;
     command.b = 0;
@@ -75,7 +75,7 @@ function pressOp (currOp) {
         command.is_executed = false;
         command.b = 0;
     }
-    if (displayCleared === false && command.is_executed === false) { //если дисплей не пуст и результат вычислений пуст то
+    if (displayCleared === false && command.is_executed === false) { //if the display is not empty and the result of the comp is empty then
         equals();
         displayCleared = false;
         command.is_executed = false;
