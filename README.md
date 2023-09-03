@@ -1,7 +1,7 @@
 # calcPet
 
 Calculator
-Author: Your Name (https://github.com/Svpritt)
+Author: Serhii Pritt  (https://github.com/Svpritt)
 
 Note: This calculator is provided as a basic sample and can be customized or integrated into your web project as needed. Its functionality is minimal and intended as a starting point for further development and enhancement.
 
